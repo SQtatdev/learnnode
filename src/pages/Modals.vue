@@ -1,21 +1,31 @@
-<script setup> 
-
+<script setup>
 import { ref } from 'vue';
 import Modal from '../comp/Modal.vue';
+import ImgModal from '../comp/ImgModal.vue';
 let modalActive = ref(false);
-let modalActive2 = ref(false)
+let modalActive2 = ref(false);
+
 </script>
-
 <template>
-    <div class="container mt-3">
-        <div class="buttons">
-            <button class="button is-primary" @click="modalActive=true">Open Modal</button>
-            <button class="button is-warning" @click="modalActive2=true">Open Modal2</button>
-        </div>
-        
-            <Modal :active="modalActive" @click="modalActive=false" url="https://picsum.photos/seed/sigmaboy/1280/960?random=1"> </Modal>
-            <Modal :active="modalActive2" @click="modalActive2=false"url="https://picsum.photos/1280/960?r=2"> </Modal>
 
+    <div class="buttons">
+        <button class="button is-primary" @click="modalActive = true">Open Modal</button>
+        <button class="button is-warning" @click="modalActive2 = true">Open Modal 2</button>
     </div>
+
+    <ImgModal :active="modalActive" @close="modalActive = false" url="https://picsum.photos/seed/ryvlin/1280/960">
+
+    </ImgModal>
+
+    <Modal :active="modalActive2" @close="modalActive2 = false">
+        <div class="notification is-link">
+            <button class="delete"></button>
+            Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum
+            dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+            nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus
+            diam, et dictum <a>felis venenatis</a> efficitur.
+        </div>
+    </Modal>
+
 </template>
 <style></style>
