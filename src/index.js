@@ -11,12 +11,13 @@ import ChuckNorris from './pages/ChuckNorris.vue';
 import RickAndMorty from './pages/RickAndMorty.vue';
 import CookieClikier from './pages/CookieClikier.vue';
 
+
 const routes = [
   { path: '/', component: ToDo, name: 'ToDo' },
   { path: '/modals', component: Modals, name: 'Modals' },
   { path: '/chuck', component: ChuckNorris, name: 'Chuck Norris' },
   { path: '/rickandmorty', component: RickAndMorty, name: 'Rick And Morty' },
-  { path: '/cookieclicker', component: CookieClikier, name: 'Cookie Clicker'},
+  { path: '/cookieclicker', component: CookieClikier, name: 'Cookie Clicker', meta: {container: false} },
 ];
 
 const router = createRouter({
