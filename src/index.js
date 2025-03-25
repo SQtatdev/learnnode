@@ -10,6 +10,7 @@ import Modals from './pages/Modals.vue';
 import ChuckNorris from './pages/ChuckNorris.vue';
 import RickAndMorty from './pages/RickAndMorty.vue';
 import CookieClikier from './pages/CookieClikier.vue';
+import Vibration from './pages/Vibration.vue';
 
 
 const routes = [
