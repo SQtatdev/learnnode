@@ -76,8 +76,8 @@ setInterval(() => {
 
 </script>
 
-<template>
-    <div class="columns">
+<template >
+    <div class="columns ">
         <div class="column is-4 has-background-grey has-text-centered">
             <h1 class="is-size-1"> {{ cookies.toFixed(1) }} cookies </h1>
             <h3 class="is-size-3"> {{ cps.toFixed(1) }} cps </h3>
@@ -86,7 +86,7 @@ setInterval(() => {
             </figure>
         </div>
 
-        <div class="column is-6 has-background-grey-light">
+        <div class="column is-6 has-background-grey-dark">
             <!-- Grandma Images -->
             <div class="columns is-flex is-flex-wrap-wrap">
                 <figure 
@@ -121,7 +121,7 @@ setInterval(() => {
             </div>
         </div>
 
-        <div class="column is-2 has-background-white-ter">
+        <div class="column is-2 has-background-grey-darker">
             <button 
                 v-for="building in buildings" 
                 :disabled="cookies < building.price" 
