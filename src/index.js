@@ -12,6 +12,7 @@ import RickAndMorty from './pages/RickAndMorty.vue';
 import CookieClikier from './pages/CookieClikier.vue';
 import Vibration from './pages/Vibration.vue';
 import Chat from './pages/chat.vue';
+import Leaflet from './pages/Leaflet.vue';
 
 
 const routes = [
@@ -22,6 +23,7 @@ const routes = [
   { path: '/cookieclicker', component: CookieClikier, name: 'Cookie Clicker', meta: {container: false} },
   { path: '/vibration', component: Vibration, name: 'Vibration' },
   { path: '/Chat', component: Chat, name: 'Chat' },
+  { path: '/Leaflet', component: Leaflet, name:'Leaflet'},
 ];
 
 const router = createRouter({
